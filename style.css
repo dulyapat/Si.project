@@ -1,0 +1,135 @@
+.swiper-container {
+  width: 600px;
+  height: 300px;
+}
+
+.logoBrand b {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+section.navBottom {
+  height: 135px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+section.bodyContainer {
+  position: relative;
+  height: 100vh;
+  margin-left: 6%;
+  float: left;
+  width: 94%;
+  background-color: wheat;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+nav {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  top: 0px;
+  position: fixed;
+  width: 6%;
+  background-color: rgb(245, 245, 245);
+  height: 100%;
+}
+
+section.navCenter {
+  flex-direction: column;
+  height: 95px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuToggle {
+  position: relative;
+  width: 35%;
+}
+
+.menuToggle div:nth-child(1) {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 2px;
+  background-color: grey;
+}
+
+.menuToggle div:nth-child(2) {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 2px;
+  background-color: grey;
+}
+
+.menuToggle div:nth-child(3) {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  height: 2px;
+  background-color: grey;
+}
+
+section.navCenter:after {
+  position: absolute;
+  content: "Menu";
+  bottom: 0;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+section.navTop {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 11%;
+  z-index: 0;
+  top: 5rem;
+}
+
+.logo img {
+  width: 25px;
+}
+
+section.topLogo {
+  position: relative;
+  z-index: 9;
+  height: 10%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.topLogo img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+body {
+  margin: 0px;
+}
+
+@media (min-width: 875px) {
+  body {
+    display: block;
+  }
+}
+
+@media (max-width: 874px) {
+  body {
+    display: none;
+  }
+}
