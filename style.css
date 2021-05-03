@@ -33,6 +33,7 @@
 }
 
 .currentSlide {
+  position: relative;
   height: 100%;
   float: left;
   width: 50%;
@@ -70,6 +71,19 @@ section.navBottom {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+}
+
+button.slideClick {
+  position: absolute;
+  right: -2rem;
+  bottom: 120px;
+  background-color: unset;
+  border: unset;
+}
+
+button.slideClick i {
+  color: red;
+  font-size: 50px;
 }
 
 .content {

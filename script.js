@@ -19,7 +19,8 @@ console.log(allSlide);
 
 let i = 1;
 const currentSlide = document.querySelector(".currentSLide img");
-const slideTwo = document.querySelector(".textshow .content");
+const slideTwoHead = document.querySelector(".textshow .content h1");
+const slideTwoSubHead = document.querySelector(".textshow .content h2");
 const slideThree = document.querySelector(".currentSlide2 img");
 const slideFour = document.querySelector(".currentSlide3 img");
 
@@ -30,18 +31,24 @@ function onClick() {
     currentSlide.src = "img/img-2.jpg";
     slideThree.src = "img/img-3.jpg";
     slideFour.src = "img/img-1.jpg";
+    slideTwoHead.innerText = "TextChange";
+    slideTwoSubHead.innerText = "This is Sub";
   }
 
   if (number === 2) {
     currentSlide.src = "img/img-3.jpg";
     slideThree.src = "img/img-1.jpg";
     slideFour.src = "img/img-2.jpg";
+    slideTwoHead.innerText = "TextChange2";
+    slideTwoSubHead.innerText = "This is Sub2";
   }
 
   if (number === 3) {
     currentSlide.src = "img/img-1.jpg";
     slideThree.src = "img/img-2.jpg";
     slideFour.src = "img/img-3.jpg";
+    slideTwoHead.innerText = "TextChange3";
+    slideTwoSubHead.innerText = "This is Sub3";
     i = 1;
   }
 }
