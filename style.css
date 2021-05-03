@@ -1,6 +1,52 @@
 .swiper-container {
-  width: 600px;
-  height: 300px;
+  margin: unset !important;
+  width: 50%;
+  height: 100vh;
+}
+
+.currentSlide2 {
+  float: left;
+  width: 25%;
+  height: 40%;
+}
+
+.currentSlide2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.currentSlide3 {
+  float: left;
+  width: 25%;
+  height: 40%;
+}
+
+.currentSlide3 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.currentSlide img {
+  height: 100%;
+}
+
+.currentSlide {
+  height: 100%;
+  float: left;
+  width: 50%;
+}
+
+.currentSlide img {
+  width: 100%;
+  object-fit: cover;
+}
+
+section.sliderCustom {
+  position: relative;
+  width: auto;
+  height: 90vh;
 }
 
 .logoBrand b {
@@ -8,8 +54,17 @@
   font-size: 0.8rem;
 }
 
+.lang {
+  color: grey;
+  padding: 0.4rem;
+  border: 1px solid;
+  border-radius: 50%;
+  font-size: 0.8rem;
+}
+
 section.navBottom {
-  height: 135px;
+  padding: 2rem 0px;
+  height: 120px;
   display: flex;
   position: relative;
   align-items: center;
@@ -17,9 +72,27 @@ section.navBottom {
   flex-direction: column;
 }
 
+.content {
+  padding: 0px 25%;
+}
+
+.textshow {
+  flex-direction: column;
+  float: left;
+  width: 50%;
+  height: 60%;
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  justify-content: center;
+}
+
+.callTo {
+  color: #eb0029;
+}
+
 section.bodyContainer {
   position: relative;
-  height: 100vh;
+  height: auto;
   margin-left: 6%;
   float: left;
   width: 94%;
