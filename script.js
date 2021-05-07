@@ -23,6 +23,9 @@ const slideTwoHead = document.querySelector(".textshow .content h1");
 const slideTwoSubHead = document.querySelector(".textshow .content h2");
 const slideThree = document.querySelector(".currentSlide2 img");
 const slideFour = document.querySelector(".currentSlide3 img");
+const textHightlight = document.querySelector('.content-bellow .highlight');
+
+console.log(textHightlight);
 
 function onClick() {
   let number = i++;
@@ -31,24 +34,27 @@ function onClick() {
     currentSlide.src = "img/img-2.jpg";
     slideThree.src = "img/img-3.jpg";
     slideFour.src = "img/img-1.jpg";
-    slideTwoHead.innerText = "TextChange";
-    slideTwoSubHead.innerText = "This is Sub";
+    slideTwoHead.innerText = "Professional";
+    slideTwoSubHead.innerText = "Team";
+    textHightlight.innerText = "Cosmetic";
   }
 
   if (number === 2) {
     currentSlide.src = "img/img-3.jpg";
     slideThree.src = "img/img-1.jpg";
     slideFour.src = "img/img-2.jpg";
-    slideTwoHead.innerText = "TextChange2";
-    slideTwoSubHead.innerText = "This is Sub2";
+    slideTwoHead.innerText = "Better";
+    slideTwoSubHead.innerText = "Making";
+    textHightlight.innerText = "The Best";
   }
 
   if (number === 3) {
     currentSlide.src = "img/img-1.jpg";
     slideThree.src = "img/img-2.jpg";
     slideFour.src = "img/img-3.jpg";
-    slideTwoHead.innerText = "TextChange3";
-    slideTwoSubHead.innerText = "This is Sub3";
+    slideTwoHead.innerText = "Leading";
+    slideTwoSubHead.innerText = "In Asian";
+    textHightlight.innerText = "beauty";
     i = 1;
   }
 }

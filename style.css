@@ -64,8 +64,8 @@ section.sliderCustom {
 }
 
 section.navBottom {
-  padding: 2rem 0px;
-  height: 120px;
+  padding: 1.5rem 0px;
+  height: 12rem;
   display: flex;
   position: relative;
   align-items: center;
@@ -74,6 +74,7 @@ section.navBottom {
 }
 
 button.slideClick {
+  cursor: pointer;
   position: absolute;
   right: -2rem;
   bottom: 120px;
@@ -82,13 +83,41 @@ button.slideClick {
 }
 
 button.slideClick i {
-  color: red;
+  color: white;
   font-size: 50px;
 }
 
 .content {
-  padding: 0px 25%;
+  padding: 0px 20%;
+  white-space: nowrap;
 }
+
+.content h2 {
+  font-size: 3rem;
+  font-weight: 100;
+  font-style: italic;
+  margin: 0.9rem 0px;
+}
+
+.content h1 {
+  font-size: 4rem;
+  font-weight: 200;
+  margin: 0;
+  line-height: 0.2;
+}
+
+.content-bellow {
+  display: flex;
+}
+
+.content-bellow h2 {
+  margin-right:0.5rem ;
+}
+
+.content-bellow h2.highlight {
+  color:#D02027 ;
+}
+
 
 .textshow {
   flex-direction: column;
