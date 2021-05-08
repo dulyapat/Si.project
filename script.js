@@ -24,6 +24,25 @@ const slideTwoSubHead = document.querySelector(".textshow .content h2");
 const slideThree = document.querySelector(".currentSlide2 img");
 const slideFour = document.querySelector(".currentSlide3 img");
 const textHightlight = document.querySelector('.content-bellow .highlight');
+const menuToggle = document.querySelector('.menuToggle');
+const menuOpen = document.querySelector('.menu-open');
+const menuClose = document.querySelector('.menu-close');
+const menuSection = document.querySelector('.menu');
+const menuSidebar = document.querySelector('#menu__sidebar');
+const logo = document.querySelector('.logo');
+
+
+menuToggle.addEventListener('click' , function(e){
+  e.preventDefault();
+  menuSection.classList.toggle('hidden');
+  menuOpen.classList.toggle('hidden');
+  menuClose.classList.toggle('hidden');
+  menuSidebar.classList.toggle('morefront');
+  logo.classList.toggle('hidden');
+
+});
+
+
 
 console.log(textHightlight);
 
@@ -59,11 +78,7 @@ function onClick() {
   }
 }
 
-const current = document.querySelector(".loopSlide");
 
-const slideSection = allSlide.forEach(function (i) {
-  let html = ``;
-});
 
 var currentImageIndex = 0;
 
@@ -72,21 +87,17 @@ function nextPic() {
   current.images[0].src = myPicture[currentImageIndex];
 }
 
-const swiper = new Swiper(".swiper-container", {
-  // Optional parameters
-  slidesPerView: 1,
-  loop: false,
-
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
-
-  // Navigation arrows
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  slidesPerGroup: 3,
+  centeredSlides:false,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
-
-  // And if we need scrollbar
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
 });
