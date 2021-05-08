@@ -29,7 +29,7 @@
         </a>
       </div>
     </section>
-    <nav>
+    <nav id="menu__sidebar">
       <section class="navTop">
         <div class="logo">
           <a href="#">
@@ -40,10 +40,14 @@
         </div>
       </section>
       <section class="navCenter">
+        <!-- menutoggle -->
         <div class="menuToggle">
-          <div></div>
-          <div></div>
-          <div></div>
+      <div class="menu-open">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="menu-close hidden">
+        <i class="fas fa-times"></i>
+      </div>
         </div>
       </section>
       <section class="navBottom">
@@ -56,6 +60,58 @@
     </nav>
 
     <section class="bodyContainer">
+
+
+      <section class="menu row hidden">
+
+        <div class="col-md-3 p-0"> 
+          <div class="logo__in__menu">
+          <img src="https://www.rojukiss.com/wp-content/uploads/2020/07/Rojukiss_Logo_2020.png" alt="">
+        </div>
+        <nav class="in__menu">
+          <li>
+            <a href="#">
+              About us <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">Brands <i class="fas fa-chevron-right"></i></a>
+          </li>
+          <li>
+            <a href="#">SUSTAINABILITY <i class="fas fa-chevron-right"></i></a>
+          </li>
+
+          <li>
+            <a href="#">CORPORATE GOVERNANCE <i class="fas fa-chevron-right"></i></a>
+          </li>
+
+          <li>
+            <a href="#">Investor Relations <i class="fas fa-chevron-right"></i></a>
+          </li>
+
+          <li>
+            <a href="#"> News & Media <i class="fas fa-chevron-right"></i></a>
+          </li>
+
+          <li>
+            <a href="#">Careers<i class="fas fa-chevron-right"></i></a>
+          </li>
+
+          <li>
+            <a href="#">Contact US<i class="fas fa-chevron-right"></i></a>
+          </li>
+        </nav>
+      </div>
+
+        <div class="col-md-9 p-0">
+          <div class="menu__bg">
+            <img src="img/img-4.jpg" alt="">
+          </div>
+        </div>
+
+       
+      </section>
+
       <!-- Slider main container -->
 
       <section class="sliderCustom">
@@ -90,24 +146,248 @@
 
       <!-- section who we are -->
 
-      <!-- <section class="who__we__are">
-
+      <section class="who__we__are">
         <div class="row">
           <div class="col-md-6 left_content_section1">
             <b>WHO WE ARE</b>
             <h2>Time to Great Change</h2>
-            <p>We believe that our key to success is tied up to Expertise, Sincerity and Commitment that we have on our duties, our staff, our partners and our customers. <br>
-               Lorem ipsum dolor sit amet, consectetur adipiscing elitsed do eiusmod tempor incididunt ut labore et dolore magna aliquaenim ad minim venia.</p>
+            <p>We believe that our key to success is tied up to Expertise, Sincerity and Commitment that we have on our duties, our staff, our partners and our customers. </p> 
+             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elitsed do eiusmod tempor incididunt ut labore et dolore magna aliquaenim ad minim venia.</p>
+             <a class="hover__button" href="#">READ MORE</a>
             
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 right_content_setion1">
             <div class="image_hover">
               <img src="img/img-1.jpg" alt="">
             </div>
           </div>
         </div>
+      </section>
 
-      </section> -->
+      <!-- section our brand -->
+
+      <section class="our__brand">
+
+        <div class="row morefront">
+          <div class="col-md-12">
+            <b>OUR BRANDS</b>
+            <h2>quality Beauty & Health product</h2>
+          </div>
+          <div class="col-md-6 mt-4 width__custom">
+
+            <div class="hover__content">
+             
+              <div class="content opacity_hover">
+                <div class="circle"></div>
+                <h3>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elitsed do eiusmod
+                </h3>
+                <a class="read__more" href="#">
+                  Read More
+                </a>
+              </div>
+            </div>
+
+            <div class="hover__content mt-4">
+             
+              <div class="content opacity_hover">
+                <div class="circle"></div>
+                <h3>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elitsed do eiusmod
+                </h3>
+                <a class="read__more" href="#">
+                  Read More
+                </a>
+              </div>
+            </div>
+
+            
+          </div>
+          <div class="col-md-6 mt-custom">
+            <div class="hover__content">
+             
+              <div class="content opacity_hover">
+               <div class="circle"></div>
+                <h3>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elitsed do eiusmod
+                </h3>
+                <a class="read__more" href="#">
+                  Read More
+                </a>
+              </div>
+            </div>
+
+            <div class="hover__content mt-4">
+          
+              <div class="content opacity_hover">
+                <div class="circle"></div>
+                <h3>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elitsed do eiusmod
+                </h3>
+                <a class="read__more" href="#">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- innovation -->
+
+      <section class="innovation__section">
+        <div class="row">
+          <div class="col-md-5 left_innovation">
+            <b>INNOVATION</b>
+            <h2>Science-driven <br> skincare,<br> made simple</h2>
+          </div>
+          <div class="col-md-7 right_innovation">
+            <div class="row">
+              <div class="col-md-4 icon">
+                <i class="fas fa-leaf"></i>
+                <p>Clean Ingredients</p>
+              </div>
+              <div class="col-md-4 icon">
+                <i class="fas fa-syringe"></i>
+                <p>Cruelty Free</p>
+              </div>
+              <div class="col-md-4 icon">
+                <i class="fas fa-tint"></i>
+                <p>HIGH Humiditys</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- slider -->
+
+      <section class="slider__demo">
+
+
+        <div class="swiper-container">
+
+          <div class="header__slider">
+            <b>RJK NEWS</b>
+            <h2>Update and Insight About Us</h2>
+          </div>
+
+          <div class="button__slider">
+            <div class="swiper-button-prev"><i class="fas fa-arrow-left"></i></div>
+            <div class="let_div"></div>
+            <div class="swiper-button-next"><i class="fas fa-arrow-right"></i></div>
+          </div>
+            <!-- If we need navigation buttons -->
+  
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="mock_pic"></div>
+                </div>
+                <div class="col-md-7">
+                  <div class="content-slider">
+                    <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elitsed do eiusmod tempor incididunt</p>
+                    <b>12 OCT 2019</b>
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="mock_pic"></div>
+                </div>
+                <div class="col-md-7">
+                  <div class="content-slider">
+                    <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elitsed do eiusmod tempor incididunt</p>
+                    <b>12 OCT 2019</b>
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="mock_pic"></div>
+                </div>
+                <div class="col-md-7">
+                  <div class="content-slider">
+                    <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elitsed do eiusmod tempor incididunt</p>
+                    <b>12 OCT 2019</b>
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="mock_pic"></div>
+                </div>
+                <div class="col-md-7">
+                  <div class="content-slider">
+                    <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elitsed do eiusmod tempor incididunt</p>
+                    <b>12 OCT 2019</b>
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="mock_pic"></div>
+                </div>
+                <div class="col-md-7">
+                  <div class="content-slider">
+                    <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elitsed do eiusmod tempor incididunt</p>
+                    <b>12 OCT 2019</b>
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="mock_pic"></div>
+                </div>
+                <div class="col-md-7">
+                  <div class="content-slider">
+                    <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elitsed do eiusmod tempor incididunt</p>
+                    <b>12 OCT 2019</b>
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="mock_pic"></div>
+                </div>
+                <div class="col-md-7">
+                  <div class="content-slider">
+                    <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elitsed do eiusmod tempor incididunt</p>
+                    <b>12 OCT 2019</b>
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+        
+          </div>
+          <!-- Add Pagination -->
+
+         
+        
+        </div>
+      </section>
 
     </section>
 
