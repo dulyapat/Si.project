@@ -1,21 +1,4 @@
-const slide1 = {
-  text: "test",
-  img: "http://www.bildersuche.org/images/logos/pixabay-logo.png",
-};
 
-const slide2 = {
-  text: "test2",
-  img: "http://www.bildersuche.org/images/logos/123rf-logo.jpg",
-};
-
-const slide3 = {
-  text: "test3",
-  img: "http://www.java2s.com/style/download.png",
-};
-
-const allSlide = [slide1, slide2, slide3];
-
-console.log(allSlide);
 
 let i = 1;
 const currentSlide = document.querySelector(".currentSLide img");
